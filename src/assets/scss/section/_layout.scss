@@ -34,3 +34,18 @@
         }
     }
 }
+
+
+@media(max-width:800px) {
+    #header {
+        left: -260px;
+    }
+
+    #main {
+        padding-left: 0;
+    }
+
+    #footer {
+        padding-left: 0;
+    }
+}

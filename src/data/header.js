@@ -12,7 +12,7 @@ export const menuText = [
         icon: <MdOutlineTravelExplore />,
         src: "/"
     }, {
-        title: "오늘의 여행지 탐험",
+        title: "오늘의 추천 픽!",
         icon: <MdFavorite />,
         src: "/today"
     }, {

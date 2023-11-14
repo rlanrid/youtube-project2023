@@ -15,3 +15,12 @@ Youtube API를 이용해서 여행하는 사이트를 만들겠습니다.
 4. react-helmet-async은 React 애플리케이션에서 동적으로 head 요소를 조작할 수 있게 해주는 라이브러리입니다. 
 
 5. swiper는 모바일 및 데스크톱에서 사용할 수 있는 터치 슬라이드 라이브러리입니다. 
+
+
+## Swiper 사용법
+1. Swiper 사이트에 들어갑니다. [링크](https://swiperjs.com/)
+
+2. 우측 상단 Docs를 클릭해 Swiper에 대한 정보를 얻을 수 있습니다.
+
+3. Resources의 Demo를 들어가면 예시 코드를 볼 수 있습니다.
+
