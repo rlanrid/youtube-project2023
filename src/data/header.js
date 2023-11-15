@@ -24,35 +24,35 @@ export const menuText = [
 
 export const keywordText = [
     {
-        title: "HALIDONMUSIC",
-        src: "/search/HALIDONMUSIC"
+        title: "희철리즘",
+        src: "/search/희철리즘"
     }, {
-        title: "TwoSetViolin",
-        src: "/search/TwoSetViolin"
+        title: "빠니보틀",
+        src: "/search/빠니보틀"
     }, {
-        title: "DW Classical Music",
-        src: "/search/DW Classical Music"
+        title: "모칠레로",
+        src: "/search/모칠레로"
     }, {
-        title: "Music Compliation",
-        src: "/search/Music Compliation"
+        title: "테리당",
+        src: "/search/테리당"
     }, {
-        title: "Brilliant Classics",
-        src: "/search/Brilliant Classics"
+        title: "시칠리안",
+        src: "/search/시칠리안"
     }, {
-        title: "인생클래식",
-        src: "/search/인생클래식"
+        title: "쏘이Soy The World",
+        src: "/search/쏘이Soy The World"
     }, {
-        title: "뮤라벨",
-        src: "/search/뮤라벨"
+        title: "세계는요지경",
+        src: "/search/세계는요지경"
     }, {
-        title: "ClickClassic",
-        src: "/search/ClickClassic"
+        title: "레리꼬",
+        src: "/search/레리꼬"
     }, {
-        title: "Classical Piano Music",
-        src: "/search/Classical Piano Music"
+        title: "캐럿맨 여행기",
+        src: "/search/캐럿맨 여행기"
     }, {
-        title: "또모",
-        src: "/search/또모"
+        title: "원지의하루",
+        src: "/search/원지의하루"
     }
 ]
 
