@@ -1,5 +1,5 @@
 .header__logo {
-    border-bottom: 1px solid var(--black200);
+    border-bottom: 1px solid var(--sub-color);
 
     a {
         display: flex;
@@ -9,7 +9,7 @@
         em {
             width: 50px;
             height: 50px;
-            border: 2px solid var(--black);
+            border: 2px solid var(--sub-color);
             position: relative;
             border-radius: 50%;
             animation: logo 15s 1s ease-in-out infinite;
@@ -52,6 +52,7 @@
 
 .header__menu {
     padding: 10px;
+    color: var(--sub-color);
 
     .menu {
 
@@ -62,7 +63,6 @@
                 font-size: 1rem;
                 display: block;
                 line-height: 1;
-                color: var(--black100);
                 padding: 1rem 2rem 1rem 2.8rem;
                 border-radius: 40px;
                 position: relative;
@@ -70,8 +70,9 @@
                 border: 1px solid transparent;
 
                 &:hover {
-                    background-color: rgb(234, 234, 234);
-                    border: 1px solid rgb(234, 234, 234);
+                    background-color: var(--sub-color);
+                    border: 1px solid var(--primary-color);
+                    color: var(--primary-color);
                 }
 
                 svg {
@@ -85,8 +86,9 @@
 
             &.active {
                 a {
-                    background-color: rgb(234, 234, 234);
-                    border: 1px solid rgb(234, 234, 234);
+                    background-color: var(--sub-color);
+                    border: 1px solid var(--primary-color);
+                    color: var(--primary-color);
                 }
             }
         }
@@ -99,18 +101,24 @@
         li {
             margin-bottom: 5px;
 
+            &.active {
+                a {
+                    background-color: var(--sub-color);
+                    color: var(--primary-color);
+                }
+            }
+
             a {
                 font-size: 1rem;
                 display: block;
                 line-height: 1;
-                color: var(--black100);
                 padding: 0.6rem 1rem 0.7rem 1.5rem;
-                border: 1px solid var(--black200);
+                border: 1px solid var(--sub-color);
                 border-radius: 50px;
 
                 &:hover {
-                    color: var(--white);
-                    background-color: var(--black);
+                    background-color: var(--sub-color);
+                    color: var(--primary-color);
                 }
             }
         }
@@ -118,7 +126,7 @@
 }
 
 .header__sns {
-    border-top: 1px solid var(--black200);
+    border-top: 1px solid var(--sub-color);
     position: absolute;
     left: 0;
     right: 0;
