@@ -7,8 +7,8 @@ const Youtuber = () => {
         <section id='youtuberPage'>
             <h2>😁 여행 유튜버 모음</h2>
             <div className='youtuber__inner'>
-                {youtuberText.map((youtuber, key) => (
-                    <div className="youtuber play__icon" key={key}>
+                {youtuberText.map((youtuber) => (
+                    <div className="youtuber play__icon" key={youtuber.channelId}>
                         <div className='youtuber__img'>
                             <Link to={`/channel/${youtuber.channelId}`}>
                                 <img src={youtuber.img} alt={youtuber.author} />

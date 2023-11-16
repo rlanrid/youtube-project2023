@@ -2,11 +2,20 @@
     display: grid;
     grid-template-columns: repeat(4, 24%);
     justify-content: space-between;
+    min-height: 100vh;
 
     .video {
         margin-bottom: 50px;
-        border: 1px solid var(--white100);
         padding: 15px;
+        background-color: var(--video-color);
+
+        &.channel {
+            .video__info {
+                .info {
+                    display: none;
+                }
+            }
+        }
 
         .video__thumb {
 
@@ -38,6 +47,10 @@
                 display: flex;
                 justify-content: space-between;
                 color: var(--black400);
+
+                &.channel {
+                    display: none;
+                }
 
                 .author {
                     @include line-one;
@@ -101,16 +114,21 @@
             border-bottom: 1px solid var(--black400);
 
             .id {
-                padding: 7px 20px;
-                border: 1px solid var(--black);
-                border-radius: 50px;
-                font-weight: 800;
-                color: var(--black);
-
                 a {
                     border-radius: var(--black300);
                     padding: 10px 20px;
-                    border-radius: 30px;
+                    border-radius: 50px;
+                    font-weight: 800;
+                    border: 1px solid var(--black);
+                    color: var(--black);
+                    transition: background-color 0.3s;
+
+
+                    &:hover {
+                        background-color: var(--black);
+                        color: var(--white);
+                        cursor: pointer;
+                    }
                 }
             }
 
@@ -169,5 +187,19 @@
                 }
             }
         }
+    }
+}
+
+
+// 반응형
+@media(max-width:1280px) {
+    .video__inner {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media(max-width:480px) {
+    .video__inner {
+        grid-template-columns: repeat(1, 100%);
     }
 }

@@ -8,6 +8,7 @@ import Header from './components/section/Header'
 import Footer from './components/section/Footer'
 import Main from './components/section/Main'
 import Search from './pages/Search'
+import Video from './pages/Video'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/youtuber' element={<Youtuber />}></Route>
           <Route path='/channel/:channelId' element={<Channel />}></Route>
           <Route path='/search/:searchId' element={<Search />}></Route>
+          <Route path='/video/:videoId' element={<Video />}></Route>
         </Routes>
       </Main>
       <Footer />

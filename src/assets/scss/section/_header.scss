@@ -1,5 +1,4 @@
 .header__logo {
-    border-bottom: 1px solid var(--sub-color);
 
     a {
         display: flex;
@@ -95,11 +94,12 @@
     }
 
     .keyword {
-        border-top: 1px solid var(--white200);
         padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
 
         li {
-            margin-bottom: 5px;
+            margin: 0 0 10px 5px;
 
             &.active {
                 a {
@@ -112,9 +112,10 @@
                 font-size: 1rem;
                 display: block;
                 line-height: 1;
-                padding: 0.6rem 1rem 0.7rem 1.5rem;
+                padding: 0.5rem 1rem;
                 border: 1px solid var(--sub-color);
                 border-radius: 50px;
+                transition: background-color 0.3s;
 
                 &:hover {
                     background-color: var(--sub-color);
@@ -126,7 +127,6 @@
 }
 
 .header__sns {
-    border-top: 1px solid var(--sub-color);
     position: absolute;
     left: 0;
     right: 0;
@@ -137,6 +137,10 @@
 
     li {
         display: inline-block;
+
+        &:hover {
+            transform: scale(1.2);
+        }
 
         a {
             display: inline-block;

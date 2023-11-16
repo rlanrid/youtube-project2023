@@ -39,7 +39,7 @@ export const keywordText = [
         title: "시칠리안",
         src: "/search/시칠리안"
     }, {
-        title: "쏘이Soy The World",
+        title: "쏘이",
         src: "/search/쏘이Soy The World"
     }, {
         title: "세계는요지경",

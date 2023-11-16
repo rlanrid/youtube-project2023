@@ -36,11 +36,13 @@
             font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 10px;
+            @include line(3);
         }
 
         .desc {
             font-size: 14px;
             color: var(--black300);
+            @include line(4);
         }
 
         .info {
