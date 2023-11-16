@@ -28,7 +28,7 @@ const Today = () => {
                 ))}
             </section>
 
-            <section id='youtuber'>
+            <section id='youtuberPage'>
                 <h2>😁 여행 유튜버 모음</h2>
                 <div className='youtuber__inner'>
                     {youtuberText.map((youtuber, key) => (
