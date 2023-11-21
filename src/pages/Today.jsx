@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { todayText } from '../data/today'
 import { youtuberText } from '../data/youtuber'
+import Main from '../components/section/Main'
 
 const Today = () => {
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        setLoading(false);
+    }, [])
+
+    const searchPageClass = loading ? 'isLoading' : 'isLoaded';
     return (
-        <>
-            <section id='today'>
+        <Main
+            title="오늘의 추천 영상"
+            description="오늘의 추천 유튜브 영상입니다."
+        >
+            <section id='today' className={searchPageClass}>
                 <h2>오늘의 추천 픽!!</h2>
                 {todayText.map((text, key) => (
                     <div className="today__inner" key={key}>
@@ -28,7 +39,7 @@ const Today = () => {
                 ))}
             </section>
 
-            <section id='youtuberPage'>
+            <section id='youtuberPage' className={searchPageClass}>
                 <h2>😁 여행 유튜버 모음</h2>
                 <div className='youtuber__inner'>
                     {youtuberText.map((youtuber, key) => (
@@ -41,7 +52,7 @@ const Today = () => {
                     ))}
                 </div>
             </section>
-        </>
+        </Main>
     )
 }
 

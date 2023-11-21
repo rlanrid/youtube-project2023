@@ -70,8 +70,25 @@
         padding: 40px;
     }
 
-    .channel__more {}
+    .channel__more {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+
+        button {
+            padding: 10px 20px;
+            background-color: var(--black);
+            opacity: 0.8;
+            color: var(--white);
+            border-radius: 25px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
 }
+
 
 @media(max-width:800px) {
     .channel__inner {

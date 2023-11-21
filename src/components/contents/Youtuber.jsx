@@ -52,8 +52,8 @@ const Youtuber = () => {
                     }}
                 >
                     {youtuberText.map((youtuber, key) => (
-                        <SwiperSlide>
-                            <div className="youtuber play__icon" key={key}>
+                        <SwiperSlide key={key}>
+                            <div className="youtuber play__icon">
                                 <div className='youtuber__img'>
                                     <Link to={`/channel/${youtuber.channelId}`}>
                                         <img src={youtuber.img} alt={youtuber.author} />
