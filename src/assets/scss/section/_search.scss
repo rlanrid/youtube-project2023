@@ -17,8 +17,8 @@
 
 @media (max-width: 800px) {
     .search__inner {
-        padding-left: 260px;
-        padding-right: 60px;
+        padding-left: 220px;
+        padding-right: 20px;
     }
 
     #search {
@@ -39,5 +39,9 @@
 @media(max-width:480px) {
     .search__inner {
         padding: 20px 0 20px 216px;
+
+        .search__input {
+            padding: 15px;
+        }
     }
 }
