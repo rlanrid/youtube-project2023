@@ -2,7 +2,7 @@
 Youtube API를 이용해서 여행하는 사이트를 만들겠습니다.
 평소에 여행을 좋아하기 때문에.....
 
-<img src="https://rlanrid.github.io/youtube-project2023/src/assets/img/cover.jpg">
+<img src="https://github.com/rlanrid/youtube-project2023/blob/main/src/assets/img/cover.JPG">
 
 ## 설치
 `npm install react-router-dom axios react-icon react-player sass react-helmet-async swiper`
@@ -65,9 +65,12 @@ RapidAPI는 다양한 웹 API에 액세스하고 이를 통합하며, API를 더
 
 <details>
 <summary>error: failed to push some refs to </summary>
-원인: 위와 같은 에러는 원격저장소(github)에 내 로컬(내컴퓨터)에는 없는 파일이 있을 떄 내 파일을 push를 하면 발생하는 오류이다.   
+원인: 위와 같은 에러는 원격저장소(github)에 내 로컬(내컴퓨터)에는 없는 파일이 있을 떄 내 파일을 push를 하면 발생하는 오류입니다.   
    
 해결방법:   
-1. 
+1. 먼저 원격저장소에 파일을 내 로컬로 가져옵니다.
+`git pull (원격저장소별칭 보통 origin이라고 함) main`
+
+2. 이후에는 push가 가능해지므로 add -> commit -> push 순으로 수정사항을 반영하면 해결됩니다.
 </details>
 
