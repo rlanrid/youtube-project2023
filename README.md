@@ -4,7 +4,6 @@ Youtube API를 이용해서 여행하는 사이트를 만들겠습니다.
 
 <img src="https://rlanrid.github.io/youtube-project2023/src/assets/img/cover.jpg">
 
-
 ## 설치
 `npm install react-router-dom axios react-icon react-player sass react-helmet-async swiper`
 
