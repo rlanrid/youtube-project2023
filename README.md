@@ -61,5 +61,13 @@ RapidAPI는 다양한 웹 API에 액세스하고 이를 통합하며, API를 더
 1. 새로고침
 2. 주소 더블 체크
 3. 브라우저의 쿠키와 캐쉬 지우기
+</details>   
+
+<details>
+<summary>error: failed to push some refs to </summary>
+원인: 위와 같은 에러는 원격저장소(github)에 내 로컬(내컴퓨터)에는 없는 파일이 있을 떄 내 파일을 push를 하면 발생하는 오류이다.   
+   
+해결방법:   
+1. 
 </details>
 
