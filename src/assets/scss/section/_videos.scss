@@ -171,6 +171,7 @@
             .commentTitle {
                 font-weight: 800;
                 font-size: 24px;
+                font-family: var(--mainfont-NexonLv1Gothic);
             }
 
             ul {
@@ -185,8 +186,8 @@
                         width: 100%;
                         margin: 20px 0;
                         padding: 10px 20px;
-                        border: 1px solid var(--black100);
-                        border-radius: 50px;
+                        background-color: var(--black600);
+                        border-radius: 15px;
                         white-space: pre-line;
                         font-weight: 600;
                     }

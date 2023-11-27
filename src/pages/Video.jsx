@@ -11,13 +11,34 @@ import Main from '../components/section/Main';
 const Video = () => {
     const { videoId } = useParams();
     const [videoDetail, setVideoDetail] = useState(null);
+    const [comments, setComments] = useState([]); //추가
 
     useEffect(() => {
         fetchFromAPI(`videos?part=snippet,statistics&id=${videoId}`)
             .then((data) => {
                 console.log(data);
                 setVideoDetail(data.items[0]);
+            });
+
+        // YouTube 동영상 댓글 가져오기
+        const apiKey = process.env.REACT_APP_RAPID_API_KEY; // RapidAPI에서 생성한 API 키
+        const requestOptions = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Host': 'youtube-v31.p.rapidapi.com',
+                'X-RapidAPI-Key': apiKey,
+            },
+        };
+
+        fetch(`https://youtube-v31.p.rapidapi.com/commentThreads?videoId=${videoId}`, requestOptions)
+            .then((response) => response.json())
+            .then((data) => {
+                setComments(data.items);
+                console.log(data);
             })
+            .catch((error) => {
+                console.error(error);
+            });
     }, [videoId]);
 
     return (
@@ -54,6 +75,16 @@ const Video = () => {
                             </div>
                             <div className="video__desc">
                                 {videoDetail.snippet.description}
+                            </div>
+                            <div className="video__comment">
+                                <h2 className='commentTitle'>Comments</h2>
+                                <ul>
+                                    {comments.map((comment) => (
+                                        <li key={comment.id}>
+                                            <p>{comment.snippet.topLevelComment.snippet.textOriginal}</p>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     </div>
